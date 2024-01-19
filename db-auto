@@ -1,0 +1,19 @@
+Nome tabella: auto
+
+id - integer - SMALLINT - PRIMARY_KEY AUTO_INCREMENT UNIQUE NOTNULL
+nome_auto - string - VARCHAR(30) - NOTNULL
+marca - string - VARCHAR(20) - NOTNULL
+concessionaria - string - VARCHAR(20) - NULL
+motore - string - VARCHAR(20) - NOTNULL
+cilindrata - string - VARCHAR(20) - NOTNULL
+lunghezza_auto - integer - TINYINT - NOTNULL
+larghezza_auto - integer - TINYINT - NOTNULL
+peso_auto - integer - TINYINT - NOTNULL
+altezza_auto - integer - TINYINT - NOTNULL
+dimensioni_ruote - integer - TINYINT - NOTNULL
+dimensioni_bagagliaio - integer - TINYINT - NOTNULL
+posti - integer - TINYINT - NOTNULL
+garanzia - string - VARCHAR(10) - NULL
+alimentazione - string - VARCHAR(20) - NOTNULL
+classe_auto - string - VARCHAR(10) - NOTNULL
+anno_fabbricazione - YEAR - 
