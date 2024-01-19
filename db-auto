@@ -1,19 +1,20 @@
 Nome tabella: auto
 
-id - integer - PRIMARY_KEY AUTO_INCREMENT UNIQUE NOTNULL
-modello - string - VARCHAR(50) - NOTNULL
-marca - string - VARCHAR(25) - NOTNULL
+id - integer - MEDIUMINT - PRIMARY_KEY - UNSIGNED - AUTO_INCREMENT UNIQUE NOT NULL
+modello - string - VARCHAR(50) - NOT NULL
+marca - string - VARCHAR(25) - NOT NULL
 concessionaria - string - VARCHAR(20) - NULL
-motore - string - VARCHAR(20) - NOTNULL
-cilindrata - string - VARCHAR(20) - NOTNULL
-lunghezza_auto - FLOAT - FLOAT(4,2) - NOTNULL
-larghezza_auto - FLOAT - FLOAT(4,2) - NOTNULL
-peso_auto - FLOAT - FLOAT(4,2) - NOTNULL
-altezza_auto - FLOAT - FLOAT(4,2) - NOTNULL
-dimensioni_ruote - FLOAT - FLOAT(4,2) - NOTNULL
-dimensioni_bagagliaio - FLOAT - FLOAT(4,2) - NOTNULL
-posti - integer - TINYINT - NOTNULL
+motore - string - VARCHAR(20) - NOT NULL
+cilindrata - string - VARCHAR(20) - NULL
+lunghezza_auto - float - FLOAT(4,2) - NOT NULL
+larghezza_auto - float - FLOAT(4,2) - NOT NULL
+peso_auto - float - FLOAT(4,2) - NOT NULL
+altezza_auto - float - FLOAT(4,2) - NOT NULL
+dimensioni_ruote - float - FLOAT(4,2) - NOT NULL
+dimensioni_bagagliaio - float - FLOAT(4,2) - NOT NULL
+posti - integer - TINYINT - UNSIGNED - NOT NULL
 garanzia - string - VARCHAR(10) - NULL
-alimentazione - string - VARCHAR(20) - NOTNULL
-classe_auto - string - VARCHAR(10) - NOTNULL
-anno_fabbricazione - YEAR - 
+alimentazione - string - VARCHAR(20) - NOT NULL
+classe_auto - string - VARCHAR(10) - NOT NULL
+anno_fabbricazione - date - YEAR - NOT NULL
+prezzo - float - DECIMAL(9,2) - NULL
